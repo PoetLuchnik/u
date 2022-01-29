@@ -18,5 +18,13 @@
     <ClCompile Include="src\main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\why\yvector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\why\yvector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
