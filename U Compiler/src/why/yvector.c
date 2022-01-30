@@ -14,12 +14,12 @@ YV    yv_init_empty(size_t e_sz) {
 	yv_init(e_sz, 0);
 }
 
-int   yv_free(YV yv) {
+void  yv_free(YV yv) {
 	if (yv.data) free(yv.data);
 }
 
 void* yv__at(YV yv, int i) {
-	size_t j = i < 0 ? yv.e_count - i : i;
+	size_t j = i < 0 ? yv.e_count + i : i;
 	return (char*)yv.data + j * yv.e_sz;
 }
 
@@ -48,10 +48,12 @@ int   yv_push(YV* yv, void* src) {
 			return 0;
 
 	yv->e_count++;
+	yv->size += yv->e_sz;
 
 	if (yv_set_at(*yv, -1, src)) return 1;
 
 	yv->e_count--;
+	yv->size -= yv->e_sz;
 	return 0;
 }
 

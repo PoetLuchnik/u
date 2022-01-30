@@ -14,7 +14,7 @@ typedef struct {
 
 YV    yv_init(size_t e_sz, size_t e_count);
 YV    yv_init_empty(size_t e_sz);
-int   yv_free(YV yv);
+void  yv_free(YV yv);
 void* yv__at(YV yv, int i);
 int   yv__realoc(YV * yv);
 int   yv_set_at(YV yv, int i, void* src);
