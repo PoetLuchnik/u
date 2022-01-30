@@ -19,8 +19,9 @@ void  yv_free(YV yv) {
 }
 
 void* yv__at(YV yv, int i) {
-	size_t j = i < 0 ? yv.e_count + i : i;
-	return (char*)yv.data + j * yv.e_sz;
+	if (i >= (int)yv.e_count) return yv__at(yv, i - yv.e_count);
+	if (i < 0)                return yv__at(yv, yv.e_count + i);
+	return (char*)yv.data + i * yv.e_sz;
 }
 
 int   yv__realoc(YV* yv) {
