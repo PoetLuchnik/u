@@ -26,5 +26,8 @@
     <ClInclude Include="src\why\yvector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\lexer\token.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

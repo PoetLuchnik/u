@@ -149,6 +149,7 @@
     <ClCompile Include="src\why\yvector.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\lexer\token.h" />
     <ClInclude Include="src\why\yvector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
