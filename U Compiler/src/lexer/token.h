@@ -14,6 +14,9 @@
 	t(DO)				\
 	t(FOR)				\
 	t(VAR)				\
+	t(CONST)			\
+	t(STATIC)			\
+	t(STRUCT)			\
 	t(STRING)			\
 	t(CHAR)				\
 	t(LINECOMMENT)		\
@@ -24,5 +27,32 @@
 	t(BRACE_END)		\
 	t(PAREN_BEG)		\
 	t(PAREN_END)		\
+	t(SQBRC_BEG)		\
+	t(SQBRC_END)		\
+	t(INTEGER)			\
+	t(COMMA)			\
+	t(COLON)			\
+	t(DOT)				\
+	t(PLUS)				\
+	t(MINUS)			\
+	t(STAR)				\
+	t(SLASH)			\
+	t(BACKSLASH)		\
+	t(PERCENT)			\
+	t(AND)				\
+	t(OR)				\
+	t(XOR)				\
+	t(NOT)				\
+	t(EXCLAMATION)		\
+	t(QUESTION)			\
+	t(LSHIFT)			\
+	t(RSHIFT)			\
+	t(MORE_THAN)		\
+	t(LESS_THAN)		\
+	t(EQUAL)			\
+	t(NOT_EQUAL)		\
+	t(MORE_EQUAL)		\
+	t(LESS_EQUAL)		\
+	t(ASSIGNMENT)		\
 
 #endif
