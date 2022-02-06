@@ -21,5 +21,9 @@ int   yv_set_at(YV yv, int i, void* src);
 int   yv_get_at(YV yv, int i, void* dst);
 int   yv_push(YV * yv, void* src);
 int   yv_pop(YV * yv);
+int   yv__insert(YV * yv, int i, void * src, size_t src_ecount);
+int   yv_insert(YV * yv, int i, void * src);
+int   yv_insert_yv(YV * yv, int i, YV * yv2);
+int   yv__premem(YV * yv, size_t off);
 
 #endif
