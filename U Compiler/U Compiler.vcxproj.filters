@@ -21,12 +21,18 @@
     <ClCompile Include="src\why\yvector.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\why\ystring.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\why\yvector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\lexer\token.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\why\ystring.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

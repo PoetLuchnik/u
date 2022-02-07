@@ -146,10 +146,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\why\ystring.c" />
     <ClCompile Include="src\why\yvector.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\lexer\token.h" />
+    <ClInclude Include="src\why\ystring.h" />
     <ClInclude Include="src\why\yvector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
